@@ -7,10 +7,10 @@
 | O campo de pesquisa permite que o usuário procure por pacientes específicos.<br>
 | Botão para adicionar pacientes, e o botão de ações, que permite editar e excluir pacientes. O botão de ações utiliza dropdowns.<br>
 | As funcionalidades em javascript são mostrar e ocultar dropdowns do botão de ações, e exibir mensagens de alerta quando o usuário tenta editar ou excluir um paciente.<br>
-| O único arquivo externo utilizado foi a logotipo da empresa, que fica no topo da página.
-- Modal informações básicas:
-| Este código HTML cria um formulário para coletar os dados de um paciente.
-| Seus componentes são: Formulário (Define um formulário com o método POST e a ação "enviar-dados.php"), Fieldset (Agrupa os campos de dados pessoais), Labels (Fornecem rótulos para cada campo de entrada), Inputs (campos para a digitação de informações), Selects (Listas suspensas para selecionar gênero e estado civil), Botão Continuar (Redireciona o usuário para a seguinte página, sem enviar os dados do formulário).
+| O único arquivo externo utilizado foi a logotipo da empresa, que fica no topo da página.<br>
+- Modal informações básicas:<br>
+| Este código HTML cria um formulário para coletar os dados de um paciente.<br>
+| Seus componentes são: Formulário (Define um formulário com o método POST e a ação "enviar-dados.php"), Fieldset (Agrupa os campos de dados pessoais), Labels (Fornecem rótulos para cada campo de entrada), Inputs (campos para a digitação de informações), Selects (Listas suspensas para selecionar gênero e estado civil), Botão Continuar (Redireciona o usuário para a seguinte página, sem enviar os dados do formulário).<br>
 
 </p>
 
