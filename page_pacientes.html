@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page pacientes</title>
+    <link rel="stylesheet" href="css_projeto_top.css">
+    <style>
+        .acao-buttons button {
+            background-color: #6de1f6;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .acao-buttons button:hover {
+            background-color: #60d1ea;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown button {
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body style="text-align: center; background-color: #f8f8f8;">
+    <img style="width: 150px; padding: 10px 0 50px 0;" src="logo_da_gestão.png" alt="Logo da GestãoDS">
+
+    <table style="width: 100%; border: 1px solid #ccc; background-color: #f5f5f5; border-spacing: 5px 10px;">
+        <thead>
+            <tr style="padding: 10px;">
+                <td colspan="6">
+                    <div>
+                        <p style="float: left; margin-left: 10px;">Listagem de pacientes</p>
+                        <form action="/adicionar-paciente" method="post">
+                            <button type="submit" style="float: right; margin-right: 10px;">Adicionar paciente</button>
+                            <input type="search" name="nome" placeholder="Pesquisar" style="float: right; margin-right: 10px;">
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="padding: 10px;">
+                <th>Nome ⇅</th>
+                <th>CPF ⇅</th>
+                <th>Data de nascimento ⇅</th>
+                <th>E-mail ⇅</th>
+                <th>Cidade ⇅</th>
+                <th>Ações ⇅</th>
+            </tr>
+            <tr style="padding: 10px;">
+                <td>John Doe</td>
+                <td>000.000.000-00</td>
+                <td>01/01/2023</td>
+                <td>teste@gestãods.com.br</td>
+                <td>Santa Maria</td>
+                <td class="acao-buttons">
+                    <div class="dropdown">
+                        <button onclick="mostrarOpcoes(this)">...</button>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="editarPaciente()">Editar</a>
+                            <a href="#" onclick="excluirPaciente()">Excluir</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="padding: 10px;">
+                <td>John Doe</td>
+                <td>000.000.000-00</td>
+                <td>01/01/2023</td>
+                <td>teste@gestãods.com.br</td>
+                <td>Santa Maria</td>
+                <td class="acao-buttons">
+                    <div class="dropdown">
+                        <button onclick="mostrarOpcoes(this)">...</button>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="editarPaciente()">Editar</a>
+                            <a href="#" onclick="excluirPaciente()">Excluir</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="projeto_top_back.js"></script>
+    <script>
+        function mostrarOpcoes(button) {
+            var dropdown = button.nextElementSibling;
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+
+        function editarPaciente() {
+            alert("Editar paciente selecionado");
+        }
+
+        function excluirPaciente() {
+            alert("Excluir paciente selecionado");
+        }
+    </script>
+</body>
+
+</html>
