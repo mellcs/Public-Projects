@@ -33,6 +33,7 @@ Este projeto consiste em duas páginas web:
 
 * Os arquivos utilizam CSS inline.
 * O código atual não possui tratamento de erros ou validação de dados.
+* Este é um projeto que, em retrospecto, é um pouco ambicioso para uma iniciante, no entanto estou feliz com meu progresso, embora não esteja nem perto do resultado final que eu espero.
 
 ## Desenvolvido por
 
