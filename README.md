@@ -1,7 +1,7 @@
 <h1 align="center">Teste de Front-End</h1>
 
 <p align="center">
-- Page pacientes:
+- Page pacientes:<br>
 | Este código HTML cria uma página web que exibe uma lista de pacientes e permite que o usuário execute ações como adicionar, editar e excluir pacientes.<br>
 | A tabela inclui, em formato tabular, nome, CPF, data de nascimento, e-mail, cidade e o botão de ações.<br>
 | O campo de pesquisa permite que o usuário procure por pacientes específicos.<br>
